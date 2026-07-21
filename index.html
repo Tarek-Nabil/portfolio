@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Tarek Nabil - Software Engineer & Web Developer Portfolio. Showcasing projects, skills, and contact information." />
+  <title>Portfolio - Tarek Nabil</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="custom-nav" data-aos="fade-down" data-aos-duration="800" data-aos-once="true">
+    <a href="#" class="logo">Tarek Nabil</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#skill">Skills</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HOME SECTION ===== -->
+  <section id="home" class="home-section d-flex flex-column align-items-center justify-content-center text-center">
+    <h3 class="greeting" data-aos="fade-down" data-aos-delay="200" data-aos-duration="600">Hello, I'm</h3>
+
+    <!-- الاسم: CSS animation فقط، بدون AOS عشان ميتعارضوش -->
+    <h1 class="hero-name">
+      <span class="name-letter" style="--i:1">T</span><span class="name-letter" style="--i:2">a</span><span class="name-letter" style="--i:3">r</span><span class="name-letter" style="--i:4">e</span><span class="name-letter" style="--i:5">k</span><span class="name-space"> </span><span class="name-letter" style="--i:6">N</span><span class="name-letter" style="--i:7">a</span><span class="name-letter" style="--i:8">b</span><span class="name-letter" style="--i:9">i</span><span class="name-letter" style="--i:10">l</span>
+    </h1>
+
+    <h2 class="hero-role" data-aos="fade-up" data-aos-delay="900" data-aos-duration="600">
+      <span id="typed-role"></span><span class="typed-cursor">|</span>
+    </h2>
+
+    <p class="hero-desc" data-aos="fade-up" data-aos-delay="1050" data-aos-duration="600">
+      I build clean web applications &amp; beautiful mobile apps with Flutter.<br class="d-none d-md-block" />
+      Passionate about creating user-friendly solutions that make a difference.
+    </p>
+
+    <!-- Buttons: AOS على الـ container بس، مش على كل زرار -->
+    <div class="d-flex flex-wrap gap-3 justify-content-center mb-4" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="600">
+      <a href="#contact" class="btn btn-gradient">
+        <i class="fa-solid fa-paper-plane me-2"></i>Hire Me
+      </a>
+      <a href="#portfolio" class="btn btn-outline-custom">
+        <i class="fa-solid fa-eye me-2"></i>View My Work
+      </a>
+    </div>
+
+    <div class="social-icons mb-4" data-aos="fade-up" data-aos-delay="1350" data-aos-duration="600">
+      <a href="mailto:tareknabilhelmy1122@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://github.com/Tarek-Nabil" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/tarek-nabil-953820211/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+
+    <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="600">
+      <i class="fa-solid fa-computer-mouse"></i>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="About" class="about-section py-5">
+    <div class="container">
+      <h2 class="section-title hr text-center" data-aos="fade-down" data-aos-duration="700">About Me</h2>
+      <p class="subtitle text-center mb-5" data-aos="fade-down" data-aos-delay="100">
+        Get to know more about my journey, passion, and the technologies I work with
+      </p>
+
+      <div class="row align-items-center g-5">
+        <!-- Image -->
+        <div class="col-12 col-md-4 text-center" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+          <img src="images/profile.jpg" alt="Tarek Nabil" class="about-img-photo img-fluid" />
+        </div>
+
+        <!-- Text -->
+        <div class="col-12 col-md-8" data-aos="fade-left" data-aos-delay="250" data-aos-duration="800">
+          <h3 id="se" class="about-sub-title mb-3">Passionate Software Engineer</h3>
+          <p class="about-para">
+            I'm a dedicated software engineer with a strong foundation in web development and a passion for creating
+            innovative digital solutions.
+            My journey in programming started with curiosity and has evolved into a career focused on building
+            efficient, scalable, and user-friendly applications.
+          </p>
+          <p class="about-para">
+            With expertise in modern web technologies like React, C#, and JavaScript, I enjoy tackling complex problems
+            and turning ideas into reality.
+            I believe in writing clean, maintainable code and staying up-to-date with the latest industry trends and
+            best practices.
+          </p>
+          <p class="about-para">
+            When I'm not coding, I love exploring new technologies, contributing to open-source projects, and sharing
+            knowledge with the developer community.
+            My goal is to create meaningful software that makes a positive impact on users' lives.
+          </p>
+
+          <div class="about-stats d-flex gap-4 mt-4 flex-wrap" data-aos="fade-up" data-aos-delay="350">
+            <div class="text-center">
+              <h4 class="stat-number">2+</h4>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="text-center">
+              <h4 class="stat-number">15+</h4>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skill" class="skills-section py-5" data-aos="fade-up" data-aos-duration="900">
+    <div class="container">
+      <h2 class="section-title hr text-center" data-aos="fade-right">Skills &amp; Technologies</h2>
+      <p class="subtitle text-center mb-5" data-aos="fade-left" data-aos-delay="100">Here are some of my main skills and
+        the technologies I use</p>
+
+      <div class="row g-4">
+        <!-- Frontend -->
+        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="150">
+          <div class="skills-card h-100">
+            <h3 class="skills-card-title"><i class="fa-solid fa-code"></i> Frontend Development</h3>
+            <div class="skill mb-3">
+              <div class="d-flex justify-content-between mb-1"><span>HTML / CSS</span><span>95%</span></div>
+              <div class="progress-container">
+                <div class="progress-bar-custom" style="width:95%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="d-flex justify-content-between mb-1"><span>JavaScript</span><span>85%</span></div>
+              <div class="progress-container">
+                <div class="progress-bar-custom" style="width:85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile App -->
+        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="250">
+          <div class="skills-card h-100">
+            <h3 class="skills-card-title"><i class="fa-solid fa-mobile-screen-button"></i> Mobile App Development</h3>
+            <div class="skill mb-3">
+              <div class="d-flex justify-content-between mb-1"><span>Flutter</span><span>80%</span></div>
+              <div class="progress-container">
+                <div class="progress-bar-custom" style="width:80%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="d-flex justify-content-between mb-1"><span>Dart</span><span>75%</span></div>
+              <div class="progress-container">
+                <div class="progress-bar-custom" style="width:75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="350">
+          <div class="skills-card h-100">
+            <h3 class="skills-card-title"><i class="fa-solid fa-database"></i> Databases</h3>
+            <div class="skill mb-3">
+              <div class="d-flex justify-content-between mb-1"><span>SQL Server</span><span>80%</span></div>
+              <div class="progress-container">
+                <div class="progress-bar-custom" style="width:80%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="d-flex justify-content-between mb-1"><span>MySQL</span><span>70%</span></div>
+              <div class="progress-container">
+                <div class="progress-bar-custom" style="width:70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="450">
+          <div class="skills-card h-100">
+            <h3 class="skills-card-title"><i class="fa-solid fa-screwdriver-wrench"></i> Tools &amp; Others</h3>
+            <div class="skill mb-3">
+              <div class="d-flex justify-content-between mb-1"><span>Git / GitHub</span><span>85%</span></div>
+              <div class="progress-container">
+                <div class="progress-bar-custom" style="width:85%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="d-flex justify-content-between mb-1"><span>VS Code</span><span>90%</span></div>
+              <div class="progress-container">
+                <div class="progress-bar-custom" style="width:90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECH SECTION ===== -->
+  <section class="tech-section py-5 text-center" data-aos="fade-up" data-aos-duration="900">
+    <div class="container">
+      <h2 class="section-title hr mb-5" data-aos="fade-right">Technologies I Work With</h2>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="100"><i class="fa-solid fa-code"></i><span>Html/CSS</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="150"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="200"><i class="fa-solid fa-layer-group"></i><span>C#</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="250"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="300"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="350"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+        <!-- Flutter Technologies -->
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="400"><i class="fa-solid fa-mobile-screen-button" style="color:#54C5F8;"></i><span>Flutter</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="450"><i class="fa-solid fa-d" style="color:#00B4AB;"></i><span>Dart</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="500"><i class="fa-solid fa-fire" style="color:#FFCA28;"></i><span>Firebase</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="550"><i class="fa-brands fa-android" style="color:#3DDC84;"></i><span>Android</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO SECTION ===== -->
+  <section id="portfolio" class="portfolio-section py-5" data-aos="fade-up" data-aos-duration="900">
+    <div class="container">
+      <h2 class="section-title hr text-center mb-5" data-aos="fade-right">
+        <i class="fa-solid fa-laptop-code me-2"></i>My <span class="text-gradient">Portfolio</span>
+      </h2>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Item 1 -->
+        <div class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="portfolio-card-inner">
+            <div class="portfolio-card-img-wrap">
+              <img src="images/muffia-store.png" alt="Muffia Store" class="portfolio-card-img" onerror="this.src='https://placehold.co/400x250/141622/3b82f6?text=Muffia+Store'" />
+              <span class="portfolio-card-badge">E-Commerce</span>
+            </div>
+            <div class="portfolio-card-body">
+              <h4>Muffia Store</h4>
+              <p class="portfolio-card-tech"><i class="fa-solid fa-code"></i> HTML5 · CSS3 · JavaScript</p>
+              <p class="portfolio-card-excerpt">An interactive online store featuring product catalog, shopping cart functionality, and responsive user interface.</p>
+              <a href="e:\Muffia_store\Home.html" target="_blank" class="portfolio-view-btn">
+                Visit Website <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="portfolio-card-inner">
+            <div class="portfolio-card-img-wrap">
+              <img src="images/adidas.png" alt="Adidas" class="portfolio-card-img" onerror="this.src='https://placehold.co/400x250/141622/8b5cf6?text=Adidas'" />
+              <span class="portfolio-card-badge">Web Design</span>
+            </div>
+            <div class="portfolio-card-body">
+              <h4>Adidas Showcase</h4>
+              <p class="portfolio-card-tech"><i class="fa-solid fa-code"></i> HTML5 · CSS3 · Bootstrap</p>
+              <p class="portfolio-card-excerpt">A modern responsive landing page for Adidas showcase with sleek UI components and mobile-first layout.</p>
+              <a href="file:///D:/task/adidas.html" target="_blank" class="portfolio-view-btn">
+                Visit Website <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="portfolio-card-inner">
+            <div class="portfolio-card-img-wrap">
+              <img src="images/cruds.png" alt="Cruds" class="portfolio-card-img" onerror="this.src='https://placehold.co/400x250/141622/ec4899?text=CRUDS+System'" />
+              <span class="portfolio-card-badge">Web App</span>
+            </div>
+            <div class="portfolio-card-body">
+              <h4>CRUDS System</h4>
+              <p class="portfolio-card-tech"><i class="fa-solid fa-code"></i> JavaScript · LocalStorage · CRUD</p>
+              <p class="portfolio-card-excerpt">Product management system featuring full CRUD operations (Create, Read, Update, Delete, Search) and persistent local storage.</p>
+              <a href="file:///E:/tran/CRUDS.html" target="_blank" class="portfolio-view-btn">
+                Visit Website <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATES SECTION ===== -->
+  <section id="certificates" class="certificates-section py-5" data-aos="fade-up" data-aos-duration="900">
+    <div class="container">
+      <h2 class="section-title hr text-center" data-aos="fade-down" data-aos-duration="700">
+        My Certificates
+      </h2>
+      <p class="subtitle text-center mb-5" data-aos="fade-down" data-aos-delay="100">
+        Here are my professional certificates. Click on any certificate to view more details.
+      </p>
+
+
+
+      <!-- Detailed Certificate Cards Carousel -->
+      <div class="cert-carousel-wrapper" data-aos="fade-up" data-aos-delay="200">
+        <button class="cert-carousel-btn prev" id="certPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="cert-carousel-track-wrapper">
+          <div class="cert-carousel-track" id="certTrack">
+
+            <!-- Card 1  -->
+            <div class="cert-detail-card"
+              data-title="Front-End Web Developer"
+              data-date="August 2025"
+              data-org="Higher Technological Institute"
+              data-desc="Earned the Front-End Web Developer certificate from Higher Technological Institute. This certification validated comprehensive skills in front-end web development including advanced HTML5, CSS3, JavaScript, responsive design with Bootstrap, and building fully functional and visually appealing web applications.">
+              <div class="cert-card-inner">
+                <div class="cert-card-img-wrap">
+                  <img src="images/cert-frontend.jpeg" alt="Front-End Web Developer Certificate" class="cert-card-img" onerror="this.src='https://placehold.co/300x200/2e001a/ec4899?text=Front-End+Web+Developer'" />
+                  <span class="cert-card-badge">Certificate</span>
+                </div>
+                <div class="cert-card-body">
+                  <h4>Front-End Web Developer</h4>
+                  <p class="cert-card-date"><i class="fa-regular fa-calendar"></i> August 2025</p>
+                  <p class="cert-card-excerpt">Higher Technological Institute · Advanced HTML5, CSS3, JavaScript, responsive design with Bootstrap, and building fully functional web applications.</p>
+                  <button class="cert-view-btn">View Certificate <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2  -->
+            <div class="cert-detail-card"
+              data-title="Introduction to Web Development"
+              data-date="September 2025"
+              data-org="Creativa Innovation Hubs"
+              data-desc="Completed the Introduction to Web Development course at Creativa Innovation Hubs. This course introduced the fundamentals of web development including HTML structure, CSS styling, responsive design principles, and basic JavaScript interactivity to create modern web pages.">
+              <div class="cert-card-inner">
+                <div class="cert-card-img-wrap">
+                  <img src="images/cert-webdev.png" alt="Introduction to Web Development Certificate" class="cert-card-img" onerror="this.src='https://placehold.co/300x200/1a1a2e/8b5cf6?text=Intro+to+Web+Dev'" />
+                  <span class="cert-card-badge">Certificate</span>
+                </div>
+                <div class="cert-card-body">
+                  <h4>Introduction to Web Development</h4>
+                  <p class="cert-card-date"><i class="fa-regular fa-calendar"></i> September 2025</p>
+                  <p class="cert-card-excerpt">Creativa Innovation Hubs · HTML structure, CSS styling, responsive design principles, and basic JavaScript interactivity.</p>
+                  <button class="cert-view-btn">View Certificate <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="cert-detail-card"
+              data-title="Introduction to Freelancing"
+              data-date="November 2025"
+              data-org="Creativa Innovation Hubs"
+              data-desc="Completed the Introduction to Freelancing course at Creativa Innovation Hubs. This course covered the essentials of building a successful freelancing career including client communication, project management, pricing strategies, building a portfolio, and navigating popular freelancing platforms.">
+              <div class="cert-card-inner">
+                <div class="cert-card-img-wrap">
+                  <img src="images/cert-freelancing.jpg" alt="Introduction to Freelancing Certificate" class="cert-card-img" onerror="this.src='https://placehold.co/300x200/2e1a00/f97316?text=Introduction+to+Freelancing'" />
+                  <span class="cert-card-badge">Certificate</span>
+                </div>
+                <div class="cert-card-body">
+                  <h4>Introduction to Freelancing</h4>
+                  <p class="cert-card-date"><i class="fa-regular fa-calendar"></i> November 2025</p>
+                  <p class="cert-card-excerpt">Creativa Innovation Hubs · Covered client communication, project management, pricing strategies, portfolio building, and freelancing platforms.</p>
+                  <button class="cert-view-btn">View Certificate <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4  -->
+            <div class="cert-detail-card"
+              data-title="Introduction to SQL"
+              data-date="December 2025"
+              data-org="Sololearn"
+              data-desc="Completed the Introduction to SQL course on Sololearn. This course provided hands-on practice with SQL fundamentals including SELECT statements, filtering with WHERE clauses, JOIN operations, aggregate functions, and database manipulation commands (INSERT, UPDATE, DELETE).">
+              <div class="cert-card-inner">
+                <div class="cert-card-img-wrap">
+                  <img src="images/cert-sql.jpg" alt="Introduction to SQL Certificate" class="cert-card-img" onerror="this.src='https://placehold.co/300x200/1a2e1a/22c55e?text=Introduction+to+SQL'" />
+                  <span class="cert-card-badge">Certificate</span>
+                </div>
+                <div class="cert-card-body">
+                  <h4>Introduction to SQL</h4>
+                  <p class="cert-card-date"><i class="fa-regular fa-calendar"></i> December 2025</p>
+                  <p class="cert-card-excerpt">Sololearn · Hands-on practice with SQL fundamentals: SELECT, WHERE, JOINs, aggregate functions, and database manipulation commands.</p>
+                  <button class="cert-view-btn">View Certificate <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5  -->
+            <div class="cert-detail-card"
+              data-title="Database Fundamentals"
+              data-date="December 2025"
+              data-org="MaharaTech - ITIMooca"
+              data-desc="Completed the Database Fundamentals course on MaharaTech - ITIMooca platform. This course covered the core concepts of databases including relational database design, data modeling, normalization, and fundamental SQL operations for managing and querying data effectively.">
+              <div class="cert-card-inner">
+                <div class="cert-card-img-wrap">
+                  <img src="images/cert-db.jpg" alt="Database Fundamentals Certificate" class="cert-card-img" onerror="this.src='https://placehold.co/300x200/1a1a2e/3b82f6?text=Database+Fundamentals'" />
+                  <span class="cert-card-badge">Certificate</span>
+                </div>
+                <div class="cert-card-body">
+                  <h4>Database Fundamentals</h4>
+                  <p class="cert-card-date"><i class="fa-regular fa-calendar"></i> December 2025</p>
+                  <p class="cert-card-excerpt">MaharaTech - ITIMooca · Covered core concepts of databases including relational design, data modeling, normalization, and fundamental SQL operations.</p>
+                  <button class="cert-view-btn">View Certificate <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="cert-carousel-btn next" id="certNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATE MODAL ===== -->
+  <div class="cert-modal-overlay" id="certModalOverlay">
+    <div class="cert-modal">
+      <button class="cert-modal-close" id="certModalClose"><i class="fa-solid fa-xmark"></i></button>
+      <img id="certModalImg" class="cert-modal-img" alt="Certificate Preview" />
+      <h3 class="cert-modal-title" id="certModalTitle"></h3>
+      <p class="cert-modal-meta" id="certModalMeta"></p>
+      <p class="cert-modal-body" id="certModalBody"></p>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact-section py-5" data-aos="fade-up" data-aos-duration="900">
+    <div class="container">
+      <h2 class="section-title hr text-center mb-5" data-aos="fade-right">
+        <i class="fa-solid fa-headset me-2"></i>Get <span class="text-gradient">in Touch</span>
+      </h2>
+
+      <div class="row g-4">
+        <!-- Form -->
+        <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-delay="150">
+          <div class="contact-card h-100">
+            <h2 class="contact-card-title"><i class="fas fa-paper-plane me-2"></i>Send a Message</h2>
+
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" class="form-input" placeholder="Enter your full name" />
+
+            <label for="email" class="form-label mt-3">Email Address</label>
+            <input type="email" id="email" class="form-input" placeholder="Enter your email address" />
+
+            <label for="message" class="form-label mt-3">Message</label>
+            <textarea id="message" class="form-input form-textarea"
+              placeholder="Tell me about your project or just say hello..."></textarea>
+
+            <button type="submit" class="btn btn-gradient w-100 mt-4" data-aos="flip-up" data-aos-delay="300">
+              <i class="fas fa-paper-plane me-2"></i>Send Message
+            </button>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-delay="250">
+          <div class="contact-card h-100">
+            <h2 class="contact-card-title">Contact Information</h2>
+
+            <div class="info-box mb-3">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <p class="mb-0">tareknabilhelmy1122@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="info-box mb-3">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Phone</strong>
+                <p class="mb-0">+20 112 790 4999</p>
+              </div>
+            </div>
+
+            <div class="info-box mb-4">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Location</strong>
+                <p class="mb-0">Minia, Egypt</p>
+              </div>
+            </div>
+
+            <h3 class="mb-3" style="font-size:1.1rem; color:#ccc;">Follow Me</h3>
+            <div class="social-icons">
+              <a href="https://github.com/Tarek-Nabil" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/tarek-nabil-953820211/" target="_blank"><i
+                  class="fab fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/tarek.nabil.795438" target="_blank"><i
+                  class="fa-brands fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // ===== AOS Init =====
+    AOS.init({
+      duration: 700,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 80
+    });
+
+    // ===== Typing Animation =====
+    const roles = ['Software Engineer', 'Web Developer', 'Flutter Developer'];
+    let roleIndex = 0, charIndex = 0, isDeleting = false;
+    const typedEl = document.getElementById('typed-role');
+
+    function type() {
+      const current = roles[roleIndex];
+      typedEl.textContent = isDeleting
+        ? current.substring(0, charIndex--)
+        : current.substring(0, charIndex++);
+
+      let speed = isDeleting ? 55 : 95;
+      if (!isDeleting && charIndex === current.length + 1) {
+        speed = 2000; isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        speed = 500;
+      }
+      setTimeout(type, speed);
+    }
+    // يبدأ بعد ما الحروف تخلص
+    setTimeout(type, 1400);
+
+    // ===== Progress Bars: animate on scroll =====
+    const bars = document.querySelectorAll('.progress-bar-custom');
+    const barObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = entry.target;
+          const width = target.style.width;
+          target.style.width = '0';
+          // small trick: force reflow then set width
+          requestAnimationFrame(() => {
+            requestAnimationFrame(() => { target.style.width = width; });
+          });
+          barObserver.unobserve(target);
+        }
+      });
+    }, { threshold: 0.3 });
+    bars.forEach(b => barObserver.observe(b));
+
+    // ===== Active Nav Link on Scroll =====
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(sec => {
+        if (window.scrollY >= sec.offsetTop - 120) current = sec.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active-link');
+        if (link.getAttribute('href') === '#' + current) link.classList.add('active-link');
+      });
+    });
+
+    // ===== Certificates Carousel =====
+    const detailCards = document.querySelectorAll('.cert-detail-card');
+    let currentSlide = 0;
+    const track = document.getElementById('certTrack');
+    const prevBtn = document.getElementById('certPrev');
+    const nextBtn = document.getElementById('certNext');
+
+    function getVisibleCards() {
+      return [...detailCards].filter(c => c.style.display !== 'none');
+    }
+    function getCardsPerView() {
+      if (window.innerWidth < 576) return 1;
+      if (window.innerWidth < 992) return 2;
+      return 3;
+    }
+    function updateCarousel() {
+      const cards = getVisibleCards();
+      const perView = getCardsPerView();
+      const maxSlide = Math.max(0, cards.length - perView);
+      currentSlide = Math.min(currentSlide, maxSlide);
+      const cardWidth = track.parentElement.offsetWidth / perView;
+      track.style.transform = `translateX(-${currentSlide * cardWidth}px)`;
+      updateCarouselBtns();
+    }
+    function updateCarouselBtns() {
+      const cards = getVisibleCards();
+      const perView = getCardsPerView();
+      prevBtn.disabled = currentSlide === 0;
+      nextBtn.disabled = currentSlide >= cards.length - perView;
+    }
+    prevBtn.addEventListener('click', () => { currentSlide--; updateCarousel(); });
+    nextBtn.addEventListener('click', () => { currentSlide++; updateCarousel(); });
+    window.addEventListener('resize', () => { currentSlide = 0; updateCarousel(); });
+    updateCarouselBtns();
+
+    // ===== Certificates Modal =====
+    const overlay = document.getElementById('certModalOverlay');
+    const modalClose = document.getElementById('certModalClose');
+    const modalImg = document.getElementById('certModalImg');
+    const modalTitle = document.getElementById('certModalTitle');
+    const modalMeta = document.getElementById('certModalMeta');
+    const modalBody = document.getElementById('certModalBody');
+
+    document.querySelectorAll('.cert-view-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.cert-detail-card');
+        const img = card.querySelector('.cert-card-img');
+        if (img) modalImg.src = img.src;
+        modalTitle.textContent = card.dataset.title;
+        modalMeta.textContent = card.dataset.org + ' · ' + card.dataset.date;
+        modalBody.textContent = card.dataset.desc;
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    modalClose.addEventListener('click', closeModal);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+    function closeModal() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  </script>
+</body>
+
+</html>
