@@ -16,21 +16,39 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logo.png">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
 </head>
 
 <body>
 
   <!-- ===== NAVBAR ===== -->
   <nav class="custom-nav" data-aos="fade-down" data-aos-duration="800" data-aos-once="true">
-    <a href="#" class="logo">Tarek Nabil</a>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#About">About</a></li>
-      <li><a href="#skill">Skills</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <a href="#" class="logo" aria-label="Tarek Nabil">
+      <span class="logo-letter logo-letter--pin">T</span><span class="logo-letter logo-letter--morph" style="--i:2">a</span><span class="logo-letter logo-letter--morph" style="--i:3">r</span><span class="logo-letter logo-letter--morph" style="--i:4">e</span><span class="logo-letter logo-letter--morph" style="--i:5">k</span><span class="logo-letter logo-letter--morph logo-letter--space" style="--i:6">&nbsp;</span><span class="logo-letter logo-letter--pin">N</span><span class="logo-letter logo-letter--morph" style="--i:7">a</span><span class="logo-letter logo-letter--morph" style="--i:8">b</span><span class="logo-letter logo-letter--morph" style="--i:9">i</span><span class="logo-letter logo-letter--morph" style="--i:10">l</span>
+    </a>
+    <div class="nav-end">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle light mode" title="Light / Dark mode">
+        <i class="fa-solid fa-sun theme-icon-light" aria-hidden="true"></i>
+        <i class="fa-solid fa-moon theme-icon-dark" aria-hidden="true"></i>
+      </button>
+    </div>
   </nav>
 
   <!-- ===== HOME SECTION ===== -->
@@ -489,7 +507,7 @@
               </div>
             </div>
 
-            <h3 class="mb-3" style="font-size:1.1rem; color:#ccc;">Follow Me</h3>
+            <h3 class="mb-3 contact-follow-title">Follow Me</h3>
             <div class="social-icons">
               <a href="https://github.com/Tarek-Nabil" target="_blank"><i class="fab fa-github"></i></a>
               <a href="https://www.linkedin.com/in/tarek-nabil-953820211/" target="_blank"><i
@@ -508,6 +526,29 @@
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    // ===== Theme Toggle =====
+    const themeToggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+
+    function applyTheme(theme) {
+      if (theme === 'light') root.setAttribute('data-theme', 'light');
+      else root.removeAttribute('data-theme');
+      themeToggle.setAttribute(
+        'aria-label',
+        theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'
+      );
+      try {
+        localStorage.setItem('theme', theme === 'light' ? 'light' : 'dark');
+      } catch (e) { /* ignore */ }
+    }
+
+    applyTheme(root.getAttribute('data-theme') === 'light' ? 'light' : 'dark');
+
+    themeToggle.addEventListener('click', () => {
+      const isLight = root.getAttribute('data-theme') === 'light';
+      applyTheme(isLight ? 'dark' : 'light');
+    });
+
     // ===== AOS Init =====
     AOS.init({
       duration: 700,
