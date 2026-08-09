@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="images/logo.png">
@@ -30,21 +32,45 @@
 
 <body>
 
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo-wrap">
+        <span class="preloader-logo">TN</span>
+        <div class="preloader-ring"></div>
+      </div>
+      <div class="preloader-bar">
+        <div class="preloader-progress"></div>
+      </div>
+      <span class="preloader-text">Loading...</span>
+    </div>
+  </div>
+
+
+
   <!-- ===== NAVBAR ===== -->
   <nav class="custom-nav" data-aos="fade-down" data-aos-duration="800" data-aos-once="true">
     <a href="#" class="logo" aria-label="Tarek Nabil">
-      <span class="logo-letter logo-letter--pin">T</span><span class="logo-letter logo-letter--morph" style="--i:2">a</span><span class="logo-letter logo-letter--morph" style="--i:3">r</span><span class="logo-letter logo-letter--morph" style="--i:4">e</span><span class="logo-letter logo-letter--morph" style="--i:5">k</span><span class="logo-letter logo-letter--morph logo-letter--space" style="--i:6">&nbsp;</span><span class="logo-letter logo-letter--pin">N</span><span class="logo-letter logo-letter--morph" style="--i:7">a</span><span class="logo-letter logo-letter--morph" style="--i:8">b</span><span class="logo-letter logo-letter--morph" style="--i:9">i</span><span class="logo-letter logo-letter--morph" style="--i:10">l</span>
+      <span class="logo-letter logo-letter--pin">T</span><span class="logo-letter logo-letter--morph"
+        style="--i:2">a</span><span class="logo-letter logo-letter--morph" style="--i:3">r</span><span
+        class="logo-letter logo-letter--morph" style="--i:4">e</span><span class="logo-letter logo-letter--morph"
+        style="--i:5">k</span><span class="logo-letter logo-letter--morph logo-letter--space"
+        style="--i:6">&nbsp;</span><span class="logo-letter logo-letter--pin">N</span><span
+        class="logo-letter logo-letter--morph" style="--i:7">a</span><span class="logo-letter logo-letter--morph"
+        style="--i:8">b</span><span class="logo-letter logo-letter--morph" style="--i:9">i</span><span
+        class="logo-letter logo-letter--morph" style="--i:10">l</span>
     </a>
     <div class="nav-end">
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#About">About</a></li>
         <li><a href="#skill">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#portfolio">Projects</a></li>
         <li><a href="#certificates">Certificates</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle light mode" title="Light / Dark mode">
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle light mode"
+        title="Light / Dark mode">
         <i class="fa-solid fa-sun theme-icon-light" aria-hidden="true"></i>
         <i class="fa-solid fa-moon theme-icon-dark" aria-hidden="true"></i>
       </button>
@@ -57,7 +83,12 @@
 
     <!-- الاسم: CSS animation فقط، بدون AOS عشان ميتعارضوش -->
     <h1 class="hero-name">
-      <span class="name-letter" style="--i:1">T</span><span class="name-letter" style="--i:2">a</span><span class="name-letter" style="--i:3">r</span><span class="name-letter" style="--i:4">e</span><span class="name-letter" style="--i:5">k</span><span class="name-space"> </span><span class="name-letter" style="--i:6">N</span><span class="name-letter" style="--i:7">a</span><span class="name-letter" style="--i:8">b</span><span class="name-letter" style="--i:9">i</span><span class="name-letter" style="--i:10">l</span>
+      <span class="name-letter" style="--i:1">T</span><span class="name-letter" style="--i:2">a</span><span
+        class="name-letter" style="--i:3">r</span><span class="name-letter" style="--i:4">e</span><span
+        class="name-letter" style="--i:5">k</span><span class="name-space"> </span><span class="name-letter"
+        style="--i:6">N</span><span class="name-letter" style="--i:7">a</span><span class="name-letter"
+        style="--i:8">b</span><span class="name-letter" style="--i:9">i</span><span class="name-letter"
+        style="--i:10">l</span>
     </h1>
 
     <h2 class="hero-role" data-aos="fade-up" data-aos-delay="900" data-aos-duration="600">
@@ -70,19 +101,22 @@
     </p>
 
     <!-- Buttons: AOS على الـ container بس، مش على كل زرار -->
-    <div class="d-flex flex-wrap gap-3 justify-content-center mb-4" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="600">
+    <div class="d-flex flex-wrap gap-3 justify-content-center mb-4" data-aos="fade-up" data-aos-delay="1200"
+      data-aos-duration="600">
       <a href="#contact" class="btn btn-gradient">
         <i class="fa-solid fa-paper-plane me-2"></i>Hire Me
       </a>
-      <a href="#portfolio" class="btn btn-outline-custom">
-        <i class="fa-solid fa-eye me-2"></i>View My Work
+      <a href="https://drive.google.com/file/d/17m1TOeqojvZDGr97-BZP8FshrTZ7kY3S/view?usp=sharing" target="_blank"
+        class="btn btn-outline-custom">
+        <i class="fa-regular fa-file-lines me-2"></i>CV
       </a>
     </div>
 
     <div class="social-icons mb-4" data-aos="fade-up" data-aos-delay="1350" data-aos-duration="600">
       <a href="mailto:tareknabilhelmy1122@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
       <a href="https://github.com/Tarek-Nabil" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/tarek-nabil-953820211/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.linkedin.com/in/tarek-nabil-953820211/" target="_blank"><i
+          class="fa-brands fa-linkedin"></i></a>
     </div>
 
     <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="600">
@@ -140,183 +174,318 @@
     </div>
   </section>
 
-  <!-- ===== SKILLS SECTION ===== -->
-  <section id="skill" class="skills-section py-5" data-aos="fade-up" data-aos-duration="900">
+  <!-- ===== SKILLS & TECHNOLOGIES SECTION ===== -->
+  <section id="skill" class="skills-section py-5 text-center" data-aos="fade-up" data-aos-duration="900">
     <div class="container">
-      <h2 class="section-title hr text-center" data-aos="fade-right">Skills &amp; Technologies</h2>
-      <p class="subtitle text-center mb-5" data-aos="fade-left" data-aos-delay="100">Here are some of my main skills and
-        the technologies I use</p>
+      <h2 class="section-title hr text-center mb-2" data-aos="fade-right">
+        Skills &amp; <span class="text-gradient">Technologies</span>
+      </h2>
+      <p class="subtitle text-center mb-5" data-aos="fade-left" data-aos-delay="100">
+        Technologies, tools, and frameworks I work with
+      </p>
 
-      <div class="row g-4">
-        <!-- Frontend -->
-        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="150">
-          <div class="skills-card h-100">
-            <h3 class="skills-card-title"><i class="fa-solid fa-code"></i> Frontend Development</h3>
-            <div class="skill mb-3">
-              <div class="d-flex justify-content-between mb-1"><span>HTML / CSS</span><span>95%</span></div>
-              <div class="progress-container">
-                <div class="progress-bar-custom" style="width:95%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="d-flex justify-content-between mb-1"><span>JavaScript</span><span>85%</span></div>
-              <div class="progress-container">
-                <div class="progress-bar-custom" style="width:85%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mobile App -->
-        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="250">
-          <div class="skills-card h-100">
-            <h3 class="skills-card-title"><i class="fa-solid fa-mobile-screen-button"></i> Mobile App Development</h3>
-            <div class="skill mb-3">
-              <div class="d-flex justify-content-between mb-1"><span>Flutter</span><span>80%</span></div>
-              <div class="progress-container">
-                <div class="progress-bar-custom" style="width:80%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="d-flex justify-content-between mb-1"><span>Dart</span><span>75%</span></div>
-              <div class="progress-container">
-                <div class="progress-bar-custom" style="width:75%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Database -->
-        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="350">
-          <div class="skills-card h-100">
-            <h3 class="skills-card-title"><i class="fa-solid fa-database"></i> Databases</h3>
-            <div class="skill mb-3">
-              <div class="d-flex justify-content-between mb-1"><span>SQL Server</span><span>80%</span></div>
-              <div class="progress-container">
-                <div class="progress-bar-custom" style="width:80%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="d-flex justify-content-between mb-1"><span>MySQL</span><span>70%</span></div>
-              <div class="progress-container">
-                <div class="progress-bar-custom" style="width:70%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tools -->
-        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="450">
-          <div class="skills-card h-100">
-            <h3 class="skills-card-title"><i class="fa-solid fa-screwdriver-wrench"></i> Tools &amp; Others</h3>
-            <div class="skill mb-3">
-              <div class="d-flex justify-content-between mb-1"><span>Git / GitHub</span><span>85%</span></div>
-              <div class="progress-container">
-                <div class="progress-bar-custom" style="width:85%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="d-flex justify-content-between mb-1"><span>VS Code</span><span>90%</span></div>
-              <div class="progress-container">
-                <div class="progress-bar-custom" style="width:90%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TECH SECTION ===== -->
-  <section class="tech-section py-5 text-center" data-aos="fade-up" data-aos-duration="900">
-    <div class="container">
-      <h2 class="section-title hr mb-5" data-aos="fade-right">Technologies I Work With</h2>
       <div class="d-flex flex-wrap justify-content-center gap-3">
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="100"><i class="fa-solid fa-code"></i><span>Html/CSS</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="150"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="200"><i class="fa-solid fa-layer-group"></i><span>C#</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="250"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="300"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="350"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
-        <!-- Flutter Technologies -->
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="400"><i class="fa-solid fa-mobile-screen-button" style="color:#54C5F8;"></i><span>Flutter</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="450"><i class="fa-solid fa-d" style="color:#00B4AB;"></i><span>Dart</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="500"><i class="fa-solid fa-fire" style="color:#FFCA28;"></i><span>Firebase</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="550"><i class="fa-brands fa-android" style="color:#3DDC84;"></i><span>Android</span></div>
+        <!-- Languages -->
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="100"><i class="devicon-cplusplus-plain"
+            style="color:#00599C;"></i><span>C++</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="150"><i class="fa-solid fa-layer-group"
+            style="color:#68217a;"></i><span>C#</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="200"><i class="fa-brands fa-js"
+            style="color:#f7df1e;"></i><span>JavaScript</span></div>
+        <!-- Web -->
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="250"><i class="fa-solid fa-code"
+            style="color:#e34f26;"></i><span>HTML / CSS</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="300"><i class="fa-brands fa-bootstrap"
+            style="color:#7952b3;"></i><span>Bootstrap</span></div>
+        <!-- Mobile -->
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="350"><i class="fa-solid fa-mobile-screen-button"
+            style="color:#54C5F8;"></i><span>Flutter</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="400"><i class="fa-solid fa-d"
+            style="color:#00B4AB;"></i><span>Dart</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="450"><i class="fa-brands fa-android"
+            style="color:#3DDC84;"></i><span>Android</span></div>
+        <!-- Databases -->
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="500"><i class="fa-solid fa-database"
+            style="color:#00758f;"></i><span>MySQL</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="530"><i class="fa-solid fa-server"
+            style="color:#cc292b;"></i><span>SQL Server</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="560"><i class="fa-solid fa-fire"
+            style="color:#FFCA28;"></i><span>Firebase</span></div>
+        <!-- Tools & Design -->
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="590"><i class="fa-brands fa-git-alt"
+            style="color:#f05032;"></i><span>Git / GitHub</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="620"><i class="fa-solid fa-laptop-code"
+            style="color:#007acc;"></i><span>VS Code</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="650"><i class="devicon-figma-plain"
+            style="color:#F24E1E;"></i><span>Figma</span></div>
       </div>
     </div>
   </section>
+
+
 
   <!-- ===== PORTFOLIO SECTION ===== -->
   <section id="portfolio" class="portfolio-section py-5" data-aos="fade-up" data-aos-duration="900">
     <div class="container">
-      <h2 class="section-title hr text-center mb-5" data-aos="fade-right">
-        <i class="fa-solid fa-laptop-code me-2"></i>My <span class="text-gradient">Portfolio</span>
+      <h2 class="section-title hr text-center mb-2" data-aos="fade-right">
+        <i class="fa-solid fa-laptop-code me-2"></i>My <span class="text-gradient">Projects</span>
       </h2>
+      <p class="subtitle text-center mb-5" data-aos="fade-left" data-aos-delay="100">
+        Explore my work across Web Development and Mobile App Development
+      </p>
 
-      <div class="row g-4 justify-content-center">
-        <!-- Item 1 -->
-        <div class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-          <div class="portfolio-card-inner">
-            <div class="portfolio-card-img-wrap">
-              <img src="images/muffia-store.png" alt="Muffia Store" class="portfolio-card-img" onerror="this.src='https://placehold.co/400x250/141622/3b82f6?text=Muffia+Store'" />
-              <span class="portfolio-card-badge">E-Commerce</span>
+      <!-- ===== WEB DEVELOPMENT SUB-SECTION ===== -->
+      <div class="portfolio-subsection mb-5" data-aos="fade-up">
+        <div class="subsection-header d-flex align-items-center justify-content-between mb-4 flex-wrap gap-3">
+          <div class="d-flex align-items-center gap-3">
+            <div class="subsection-icon web-icon">
+              <i class="fa-solid fa-globe"></i>
             </div>
-            <div class="portfolio-card-body">
-              <h4>Muffia Store</h4>
-              <p class="portfolio-card-tech"><i class="fa-solid fa-code"></i> HTML5 · CSS3 · JavaScript</p>
-              <p class="portfolio-card-excerpt">An interactive online store featuring product catalog, shopping cart functionality, and responsive user interface.</p>
-              <a href="e:\Muffia_store\Home.html" target="_blank" class="portfolio-view-btn">
-                Visit Website <i class="fa-solid fa-arrow-right"></i>
-              </a>
+            <div>
+              <h3 class="subsection-title mb-1">Web Development</h3>
+              <p class="subsection-desc mb-0">Responsive websites, web apps, and modern front-end interfaces</p>
             </div>
+          </div>
+          <div class="slider-nav-btns d-flex gap-2 ms-auto">
+            <button class="portfolio-slider-btn prev" id="webPrev" aria-label="Previous Web Projects"><i
+                class="fa-solid fa-chevron-left"></i></button>
+            <button class="portfolio-slider-btn next" id="webNext" aria-label="Next Web Projects"><i
+                class="fa-solid fa-chevron-right"></i></button>
           </div>
         </div>
 
-        <!-- Item 2 -->
-        <div class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-          <div class="portfolio-card-inner">
-            <div class="portfolio-card-img-wrap">
-              <img src="images/adidas.png" alt="Adidas" class="portfolio-card-img" onerror="this.src='https://placehold.co/400x250/141622/8b5cf6?text=Adidas'" />
-              <span class="portfolio-card-badge">Web Design</span>
+        <div class="portfolio-slider-wrapper">
+          <div class="portfolio-slider-track" id="webTrack">
+            <!-- Item 1: Muffia Store -->
+            <div class="portfolio-slider-card" data-title="Muffia Store - E-Commerce Web App" data-badge="E-Commerce"
+              data-badge-class="web-badge" data-tech="HTML5, CSS3, JavaScript, LocalStorage, Responsive UI"
+              data-desc="Muffia Store is an interactive e-commerce web application featuring an extensive product catalog, category filters, interactive shopping cart, live price calculation, item quantity controls, and local storage persistence."
+              data-img="images/muffia-store.png" data-link="e:\Muffia_store\Home.html"
+              data-github="https://github.com/Tarek-Nabil">
+              <div class="portfolio-card-inner">
+                <div class="portfolio-card-img-wrap">
+                  <img src="images/muffia-store.png" alt="Muffia Store" class="portfolio-card-img"
+                    onerror="this.src='https://placehold.co/400x250/141622/3b82f6?text=Muffia+Store'" />
+                  <span class="portfolio-card-badge web-badge">E-Commerce</span>
+                </div>
+                <div class="portfolio-card-body">
+                  <h4>Muffia Store</h4>
+                  <p class="portfolio-card-tech"><i class="fa-solid fa-code"></i> HTML5 · CSS3 · JavaScript</p>
+                  <p class="portfolio-card-excerpt">An interactive online store featuring product catalog, shopping cart
+                    functionality, and responsive user interface.</p>
+                  <div class="d-flex align-items-center justify-content-between gap-2 mt-auto pt-2">
+                    <button class="portfolio-details-btn">
+                      <i class="fa-solid fa-circle-info"></i> Details
+                    </button>
+                    <a href="e:\Muffia_store\Home.html" target="_blank" class="portfolio-view-btn">
+                      Visit <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="portfolio-card-body">
-              <h4>Adidas Showcase</h4>
-              <p class="portfolio-card-tech"><i class="fa-solid fa-code"></i> HTML5 · CSS3 · Bootstrap</p>
-              <p class="portfolio-card-excerpt">A modern responsive landing page for Adidas showcase with sleek UI components and mobile-first layout.</p>
-              <a href="file:///D:/task/adidas.html" target="_blank" class="portfolio-view-btn">
-                Visit Website <i class="fa-solid fa-arrow-right"></i>
-              </a>
+
+            <!-- Item 2: Adidas Showcase -->
+            <div class="portfolio-slider-card" data-title="Adidas Brand Showcase" data-badge="Web Design"
+              data-badge-class="web-badge" data-tech="HTML5, CSS3, Bootstrap 5, Flexbox, Mobile-First Layout"
+              data-desc="A high-performance landing page designed to showcase the Adidas brand line-up. Includes animated product cards, clean hero section with call-to-action buttons, responsive navigation, and mobile-first CSS styling."
+              data-img="images/adidas.png" data-link="file:///D:/task/adidas.html"
+              data-github="https://github.com/Tarek-Nabil">
+              <div class="portfolio-card-inner">
+                <div class="portfolio-card-img-wrap">
+                  <img src="images/adidas.png" alt="Adidas" class="portfolio-card-img"
+                    onerror="this.src='https://placehold.co/400x250/141622/8b5cf6?text=Adidas'" />
+                  <span class="portfolio-card-badge web-badge">Web Design</span>
+                </div>
+                <div class="portfolio-card-body">
+                  <h4>Adidas Showcase</h4>
+                  <p class="portfolio-card-tech"><i class="fa-solid fa-code"></i> HTML5 · CSS3 · Bootstrap</p>
+                  <p class="portfolio-card-excerpt">A modern responsive landing page for Adidas showcase with sleek UI
+                    components and mobile-first layout.</p>
+                  <div class="d-flex align-items-center justify-content-between gap-2 mt-auto pt-2">
+                    <button class="portfolio-details-btn">
+                      <i class="fa-solid fa-circle-info"></i> Details
+                    </button>
+                    <a href="file:///D:/task/adidas.html" target="_blank" class="portfolio-view-btn">
+                      Visit <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
+
+
+            <!-- Item 3: Personal Portfolio Website -->
+            <div class="portfolio-slider-card" data-title="Personal Software Engineer Portfolio" data-badge="Portfolio"
+              data-badge-class="web-badge" data-tech="HTML5, CSS3, JavaScript ES6+, Bootstrap 5, FontAwesome, AOS"
+              data-desc="Custom engineered developer portfolio showcasing software projects, skill metrics, certified accomplishments, and responsive contact form. Features a modern dark/light mode toggle, project sliders, and smooth scroll animations."
+              data-img="images/portfolio-showcase.png" data-link="#" data-github="https://github.com/Tarek-Nabil">
+              <div class="portfolio-card-inner">
+                <div class="portfolio-card-img-wrap">
+                  <img src="images/portfolio-showcase.png" alt="Developer Portfolio" class="portfolio-card-img"
+                    onerror="this.src='https://placehold.co/400x250/141622/3b82f6?text=Developer+Portfolio'" />
+                  <span class="portfolio-card-badge web-badge">Portfolio</span>
+                </div>
+                <div class="portfolio-card-body">
+                  <h4>Personal Portfolio</h4>
+                  <p class="portfolio-card-tech"><i class="fa-solid fa-code"></i> HTML5 · CSS3 · JS · Bootstrap 5</p>
+                  <p class="portfolio-card-excerpt">Modern responsive portfolio website showcasing software projects,
+                    skills, certificates, and interactive dark/light theme.</p>
+                  <div class="d-flex align-items-center justify-content-between gap-2 mt-auto pt-2">
+                    <button class="portfolio-details-btn">
+                      <i class="fa-solid fa-circle-info"></i> Details
+                    </button>
+                    <a href="#" class="portfolio-view-btn">
+                      Visit <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== MOBILE APPLICATIONS SUB-SECTION ===== -->
+      <div class="portfolio-subsection" data-aos="fade-up" data-aos-delay="150">
+        <div class="subsection-header d-flex align-items-center justify-content-between mb-4 flex-wrap gap-3">
+          <div class="d-flex align-items-center gap-3">
+            <div class="subsection-icon mobile-icon">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div>
+              <h3 class="subsection-title mb-1">Mobile Applications</h3>
+              <p class="subsection-desc mb-0">Cross-platform mobile apps built with Flutter & Dart</p>
+            </div>
+          </div>
+          <div class="slider-nav-btns d-flex gap-2 ms-auto">
+            <button class="portfolio-slider-btn prev" id="mobilePrev" aria-label="Previous Mobile Apps"><i
+                class="fa-solid fa-chevron-left"></i></button>
+            <button class="portfolio-slider-btn next" id="mobileNext" aria-label="Next Mobile Apps"><i
+                class="fa-solid fa-chevron-right"></i></button>
           </div>
         </div>
 
-        <!-- Item 3 -->
-        <div class="col-12 col-sm-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-          <div class="portfolio-card-inner">
-            <div class="portfolio-card-img-wrap">
-              <img src="images/cruds.png" alt="Cruds" class="portfolio-card-img" onerror="this.src='https://placehold.co/400x250/141622/ec4899?text=CRUDS+System'" />
-              <span class="portfolio-card-badge">Web App</span>
+        <div class="portfolio-slider-wrapper">
+          <div class="portfolio-slider-track" id="mobileTrack">
+
+
+            <!-- Item 1: PetNest Mobile app -->
+            <div class="portfolio-slider-card" data-title="PetNest mobile Application" data-badge="Flutter Mobile"
+              data-badge-class="mobile-badge"
+              data-tech="Flutter, Dart, Firebase Auth, Firestore, REST APIs, State Management"
+              data-desc="PetNest is a comprehensive mobile application designed to streamline pet care and strengthen the bond between pets and their owners. This innovative platform addresses the common challenges faced by pet owners by offering a centralized solution for pet health management, community engagement, and professional pet services."
+              data-img="images/PetNest.jpeg" data-link="https://github.com/Tarek-Nabil"
+              data-github="https://github.com/Tarek-Nabil">
+              <div class="portfolio-card-inner">
+                <div class="portfolio-card-img-wrap">
+                  <img src="images/PetNest.jpeg" alt="PetNest App" class="portfolio-card-img"
+                    onerror="this.src='https://placehold.co/400x250/0a192f/54C5F8?text=PetNest+Mobile+App'" />
+                  <span class="portfolio-card-badge mobile-badge"><i class="fa-solid fa-mobile-screen me-1"></i>
+                    Flutter</span>
+                </div>
+                <div class="portfolio-card-body">
+                  <h4>PetNest mobile Application</h4>
+                  <p class="portfolio-card-tech"><i class="fa-solid fa-code"></i> Flutter · Dart · Firebase · REST APIs
+                  </p>
+                  <p class="portfolio-card-excerpt">PetNest is a mobile application that simplifies pet care by
+                    providing an all-in-one platform for pet health management, community interaction, and access to
+                    professional pet services, helping owners care for their pets more effectively.</p>
+                  <div class="d-flex align-items-center justify-content-between gap-2 mt-auto pt-2">
+                    <button class="portfolio-details-btn">
+                      <i class="fa-solid fa-circle-info"></i> Details
+                    </button>
+                    <a href="https://github.com/Tarek-Nabil" target="_blank" class="portfolio-view-btn">
+                      App Link <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="portfolio-card-body">
-              <h4>CRUDS System</h4>
-              <p class="portfolio-card-tech"><i class="fa-solid fa-code"></i> JavaScript · LocalStorage · CRUD</p>
-              <p class="portfolio-card-excerpt">Product management system featuring full CRUD operations (Create, Read, Update, Delete, Search) and persistent local storage.</p>
-              <a href="file:///E:/tran/CRUDS.html" target="_blank" class="portfolio-view-btn">
-                Visit Website <i class="fa-solid fa-arrow-right"></i>
-              </a>
+
+            <!-- Item 2: Smart Home Mobile App -->
+            <div class="portfolio-slider-card" data-title="Smart Home Mobile Application" data-badge="Flutter Mobile"
+              data-badge-class="mobile-badge"
+              data-tech="Flutter, Dart, ESP32, Firebase, REST API, Custom Mobile Widgets"
+              data-desc="Smart Home is a mobile application built with Flutter that allows you to control your home appliances remotely. It features a user-friendly interface, real-time device status updates, and secure communication with your IoT devices."
+              data-img="images/smartHome.png" data-link="https://github.com/Tarek-Nabil"
+              data-github="https://github.com/Tarek-Nabil">
+              <div class="portfolio-card-inner">
+                <div class="portfolio-card-img-wrap">
+                  <img src="images/smartHome.png" alt="Smart Home Mobile App" class="portfolio-card-img"
+                    onerror="this.src='https://placehold.co/400x250/0a192f/00B4AB?text=Smart+Home+Mobile+App'" />
+                  <span class="portfolio-card-badge mobile-badge"><i class="fa-solid fa-mobile-screen me-1"></i>
+                    Flutter</span>
+                </div>
+                <div class="portfolio-card-body">
+                  <h4>Smart Home Mobile App</h4>
+                  <p class="portfolio-card-tech"><i class="fa-solid fa-code"></i> Flutter · Dart · State Management ·
+                    API</p>
+                  <p class="portfolio-card-excerpt">Smart Home is a mobile application built with Flutter that allows
+                    you
+                    to control your home appliances remotely. It features a user-friendly interface, real-time device
+                    status updates, and secure communication with your IoT devices.</p>
+                  <div class="d-flex align-items-center justify-content-between gap-2 mt-auto pt-2">
+                    <button class="portfolio-details-btn">
+                      <i class="fa-solid fa-circle-info"></i> Details
+                    </button>
+                    <a href="https://github.com/Tarek-Nabil" target="_blank" class="portfolio-view-btn">
+                      App Link <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3: Smart Shop mobile app -->
+            <div class="portfolio-slider-card" data-title="Sport Shop mobile App" data-badge="Flutter Mobile"
+              data-badge-class="mobile-badge"
+              data-tech="Flutter, Dart, SQLite Database, Local Notifications, Dark Theme"
+              data-desc="Sport Shop is a mobile application built with Flutter that allows you to shop for sports products. It features a user-friendly interface, real-time product updates, and secure communication with your IoT devices."
+              data-img="images/sportshop.png" data-link="https://github.com/Tarek-Nabil"
+              data-github="https://github.com/Tarek-Nabil">
+              <div class="portfolio-card-inner">
+                <div class="portfolio-card-img-wrap">
+                  <img src="images/sportshop.png" alt="Sport Shop App" class="portfolio-card-img"
+                    onerror="this.src='https://placehold.co/400x250/0a192f/3b82f6?text=Sport+Shop+Mobile+App'" />
+                  <span class="portfolio-card-badge mobile-badge"><i class="fa-solid fa-mobile-screen me-1"></i>
+                    Flutter</span>
+                </div>
+                <div class="portfolio-card-body">
+                  <h4>Sport Shop Mobile App</h4>
+                  <p class="portfolio-card-tech"><i class="fa-solid fa-code"></i> Flutter · Dart · Firebase · REST APIs
+                  </p>
+                  <p class="portfolio-card-excerpt">Sport Shop is a mobile application built with Flutter that allows
+                    you
+                    to shop for sports products. It features a user-friendly interface, real-time product updates, and
+                    secure communication with your IoT devices.</p>
+                  <div class="d-flex align-items-center justify-content-between gap-2 mt-auto pt-2">
+                    <button class="portfolio-details-btn">
+                      <i class="fa-solid fa-circle-info"></i> Details
+                    </button>
+                    <a href="https://github.com/Tarek-Nabil" target="_blank" class="portfolio-view-btn">
+                      App Link <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
   <!-- ===== CERTIFICATES SECTION ===== -->
   <section id="certificates" class="certificates-section py-5" data-aos="fade-up" data-aos-duration="900">
     <div class="container">
-      <h2 class="section-title hr text-center" data-aos="fade-down" data-aos-duration="700">
-        My Certificates
+      <h2 class="section-title hr text-center mb-2" data-aos="fade-right">
+        <i class="fa-solid fa-award me-2"></i>My <span class="text-gradient">Certificates</span>
       </h2>
       <p class="subtitle text-center mb-5" data-aos="fade-down" data-aos-delay="100">
         Here are my professional certificates. Click on any certificate to view more details.
@@ -326,117 +495,212 @@
 
       <!-- Detailed Certificate Cards Carousel -->
       <div class="cert-carousel-wrapper" data-aos="fade-up" data-aos-delay="200">
-        <button class="cert-carousel-btn prev" id="certPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="cert-carousel-btn prev" id="certPrev" aria-label="Previous"><i
+            class="fa-solid fa-chevron-left"></i></button>
         <div class="cert-carousel-track-wrapper">
           <div class="cert-carousel-track" id="certTrack">
 
             <!-- Card 1  -->
-            <div class="cert-detail-card"
-              data-title="Front-End Web Developer"
-              data-date="August 2025"
+            <div class="cert-detail-card" data-title="Front-End Web Developer" data-date="August 2025"
               data-org="Higher Technological Institute"
               data-desc="Earned the Front-End Web Developer certificate from Higher Technological Institute. This certification validated comprehensive skills in front-end web development including advanced HTML5, CSS3, JavaScript, responsive design with Bootstrap, and building fully functional and visually appealing web applications.">
               <div class="cert-card-inner">
                 <div class="cert-card-img-wrap">
-                  <img src="images/cert-frontend.jpeg" alt="Front-End Web Developer Certificate" class="cert-card-img" onerror="this.src='https://placehold.co/300x200/2e001a/ec4899?text=Front-End+Web+Developer'" />
+                  <img src="images/cert-frontend.jpeg" alt="Front-End Web Developer Certificate" class="cert-card-img"
+                    onerror="this.src='https://placehold.co/300x200/2e001a/ec4899?text=Front-End+Web+Developer'" />
                   <span class="cert-card-badge">Certificate</span>
                 </div>
                 <div class="cert-card-body">
                   <h4>Front-End Web Developer</h4>
                   <p class="cert-card-date"><i class="fa-regular fa-calendar"></i> August 2025</p>
-                  <p class="cert-card-excerpt">Higher Technological Institute · Advanced HTML5, CSS3, JavaScript, responsive design with Bootstrap, and building fully functional web applications.</p>
+                  <p class="cert-card-excerpt">Higher Technological Institute · Advanced HTML5, CSS3, JavaScript,
+                    responsive design with Bootstrap, and building fully functional web applications.</p>
                   <button class="cert-view-btn">View Certificate <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
               </div>
             </div>
 
             <!-- Card 2  -->
-            <div class="cert-detail-card"
-              data-title="Introduction to Web Development"
-              data-date="September 2025"
+            <div class="cert-detail-card" data-title="Introduction to Web Development" data-date="September 2025"
               data-org="Creativa Innovation Hubs"
               data-desc="Completed the Introduction to Web Development course at Creativa Innovation Hubs. This course introduced the fundamentals of web development including HTML structure, CSS styling, responsive design principles, and basic JavaScript interactivity to create modern web pages.">
               <div class="cert-card-inner">
                 <div class="cert-card-img-wrap">
-                  <img src="images/cert-webdev.png" alt="Introduction to Web Development Certificate" class="cert-card-img" onerror="this.src='https://placehold.co/300x200/1a1a2e/8b5cf6?text=Intro+to+Web+Dev'" />
+                  <img src="images/cert-webdev.png" alt="Introduction to Web Development Certificate"
+                    class="cert-card-img"
+                    onerror="this.src='https://placehold.co/300x200/1a1a2e/8b5cf6?text=Intro+to+Web+Dev'" />
                   <span class="cert-card-badge">Certificate</span>
                 </div>
                 <div class="cert-card-body">
                   <h4>Introduction to Web Development</h4>
                   <p class="cert-card-date"><i class="fa-regular fa-calendar"></i> September 2025</p>
-                  <p class="cert-card-excerpt">Creativa Innovation Hubs · HTML structure, CSS styling, responsive design principles, and basic JavaScript interactivity.</p>
+                  <p class="cert-card-excerpt">Creativa Innovation Hubs · HTML structure, CSS styling, responsive design
+                    principles, and basic JavaScript interactivity.</p>
                   <button class="cert-view-btn">View Certificate <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
               </div>
             </div>
-
             <!-- Card 3 -->
-            <div class="cert-detail-card"
-              data-title="Introduction to Freelancing"
-              data-date="November 2025"
+            <div class="cert-detail-card" data-title="LinkedIn Ninja Workshop" data-date="November 2025"
+              data-org="Creativa Innovation Hubs"
+              data-desc="Successfully completed the LinkedIn Ninja Workshop, an intensive 7-hour training focused on LinkedIn profile optimization, personal branding, and smart networking techniques. The workshop provided practical strategies to build a strong professional presence and attract career opportunities.">
+
+              <div class="cert-card-inner">
+                <div class="cert-card-img-wrap">
+                  <img src="images/cert-linkedin-ninj.jpg" alt="LinkedIn Ninja Workshop Certificate"
+                    class="cert-card-img"
+                    onerror="this.src='https://placehold.co/300x200/0f4c81/ffffff?text=LinkedIn+Ninja+Workshop'" />
+
+                  <span class="cert-card-badge">Certificate</span>
+                </div>
+
+                <div class="cert-card-body">
+                  <h4>LinkedIn Ninja Workshop</h4>
+
+                  <p class="cert-card-date">
+                    <i class="fa-regular fa-calendar"></i> November 2025
+                  </p>
+
+                  <p class="cert-card-excerpt">
+                    Creativa Innovation Hubs · Completed a 7-hour workshop covering LinkedIn profile optimization,
+                    personal branding, and smart networking techniques.
+                  </p>
+
+                  <button class="cert-view-btn">
+                    View Certificate <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="cert-detail-card" data-title="Introduction to Freelancing" data-date="November 2025"
               data-org="Creativa Innovation Hubs"
               data-desc="Completed the Introduction to Freelancing course at Creativa Innovation Hubs. This course covered the essentials of building a successful freelancing career including client communication, project management, pricing strategies, building a portfolio, and navigating popular freelancing platforms.">
               <div class="cert-card-inner">
                 <div class="cert-card-img-wrap">
-                  <img src="images/cert-freelancing.jpg" alt="Introduction to Freelancing Certificate" class="cert-card-img" onerror="this.src='https://placehold.co/300x200/2e1a00/f97316?text=Introduction+to+Freelancing'" />
+                  <img src="images/cert-freelancing.jpg" alt="Introduction to Freelancing Certificate"
+                    class="cert-card-img"
+                    onerror="this.src='https://placehold.co/300x200/2e1a00/f97316?text=Introduction+to+Freelancing'" />
                   <span class="cert-card-badge">Certificate</span>
                 </div>
                 <div class="cert-card-body">
                   <h4>Introduction to Freelancing</h4>
                   <p class="cert-card-date"><i class="fa-regular fa-calendar"></i> November 2025</p>
-                  <p class="cert-card-excerpt">Creativa Innovation Hubs · Covered client communication, project management, pricing strategies, portfolio building, and freelancing platforms.</p>
+                  <p class="cert-card-excerpt">Creativa Innovation Hubs · Covered client communication, project
+                    management, pricing strategies, portfolio building, and freelancing platforms.</p>
                   <button class="cert-view-btn">View Certificate <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
               </div>
             </div>
 
-            <!-- Card 4  -->
-            <div class="cert-detail-card"
-              data-title="Introduction to SQL"
-              data-date="December 2025"
+            <!-- Card 5 -->
+            <div class="cert-detail-card" data-title="Introduction to SQL" data-date="December 2025"
               data-org="Sololearn"
               data-desc="Completed the Introduction to SQL course on Sololearn. This course provided hands-on practice with SQL fundamentals including SELECT statements, filtering with WHERE clauses, JOIN operations, aggregate functions, and database manipulation commands (INSERT, UPDATE, DELETE).">
               <div class="cert-card-inner">
                 <div class="cert-card-img-wrap">
-                  <img src="images/cert-sql.jpg" alt="Introduction to SQL Certificate" class="cert-card-img" onerror="this.src='https://placehold.co/300x200/1a2e1a/22c55e?text=Introduction+to+SQL'" />
+                  <img src="images/cert-sql.jpg" alt="Introduction to SQL Certificate" class="cert-card-img"
+                    onerror="this.src='https://placehold.co/300x200/1a2e1a/22c55e?text=Introduction+to+SQL'" />
                   <span class="cert-card-badge">Certificate</span>
                 </div>
                 <div class="cert-card-body">
                   <h4>Introduction to SQL</h4>
                   <p class="cert-card-date"><i class="fa-regular fa-calendar"></i> December 2025</p>
-                  <p class="cert-card-excerpt">Sololearn · Hands-on practice with SQL fundamentals: SELECT, WHERE, JOINs, aggregate functions, and database manipulation commands.</p>
+                  <p class="cert-card-excerpt">Sololearn · Hands-on practice with SQL fundamentals: SELECT, WHERE,
+                    JOINs, aggregate functions, and database manipulation commands.</p>
                   <button class="cert-view-btn">View Certificate <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
               </div>
             </div>
 
-            <!-- Card 5  -->
-            <div class="cert-detail-card"
-              data-title="Database Fundamentals"
-              data-date="December 2025"
+            <!-- Card 6  -->
+            <div class="cert-detail-card" data-title="Database Fundamentals" data-date="December 2025"
               data-org="MaharaTech - ITIMooca"
               data-desc="Completed the Database Fundamentals course on MaharaTech - ITIMooca platform. This course covered the core concepts of databases including relational database design, data modeling, normalization, and fundamental SQL operations for managing and querying data effectively.">
               <div class="cert-card-inner">
                 <div class="cert-card-img-wrap">
-                  <img src="images/cert-db.jpg" alt="Database Fundamentals Certificate" class="cert-card-img" onerror="this.src='https://placehold.co/300x200/1a1a2e/3b82f6?text=Database+Fundamentals'" />
+                  <img src="images/cert-db.jpg" alt="Database Fundamentals Certificate" class="cert-card-img"
+                    onerror="this.src='https://placehold.co/300x200/1a1a2e/3b82f6?text=Database+Fundamentals'" />
                   <span class="cert-card-badge">Certificate</span>
                 </div>
                 <div class="cert-card-body">
                   <h4>Database Fundamentals</h4>
                   <p class="cert-card-date"><i class="fa-regular fa-calendar"></i> December 2025</p>
-                  <p class="cert-card-excerpt">MaharaTech - ITIMooca · Covered core concepts of databases including relational design, data modeling, normalization, and fundamental SQL operations.</p>
+                  <p class="cert-card-excerpt">MaharaTech - ITIMooca · Covered core concepts of databases including
+                    relational design, data modeling, normalization, and fundamental SQL operations.</p>
                   <button class="cert-view-btn">View Certificate <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7  -->
+            <!-- Intelaq 4 Competition Certificate -->
+            <div class="cert-detail-card" data-title="Intelaq 4 Innovation Competition" data-date="May 2026"
+              data-org="Higher Technological Institute & NTI"
+              data-desc="Awarded a Certificate of Participation for presenting the Curevia – Intelligent Hospital Management & Smart Health Tracking System project at the 4th Intelaq Scientific Research and Innovation Forum. The competition was organized by the Higher Technological Institute in Beni Suef in collaboration with the National Telecommunication Institute (NTI), with participation from universities and technological institutes across Egypt.">
+
+              <div class="cert-card-inner">
+                <div class="cert-card-img-wrap">
+                  <img src="images/cert_intelaqa.jpg" alt="Intelaq 4 Participation Certificate" class="cert-card-img"
+                    onerror="this.src='https://placehold.co/300x200/2e001a/ec4899?text=Intelaq+4+Certificate'" />
+
+                  <span class="cert-card-badge competition">Competition</span>
+                </div>
+
+                <div class="cert-card-body">
+                  <h4>Intelaq 4 Innovation Competition</h4>
+
+                  <p class="cert-card-date">
+                    <i class="fa-regular fa-calendar"></i> May 2026
+                  </p>
+
+                  <p class="cert-card-excerpt">
+                    Higher Technological Institute & NTI · Certificate of Participation for presenting
+                    <strong>Curevia</strong>, an Intelligent Hospital Management & Smart Health Tracking System,
+                    at the 4th Intelaq Scientific Research and Innovation Forum.
+                  </p>
+
+                  <button class="cert-view-btn">
+                    View Certificate <i class="fa-solid fa-arrow-right"></i>
+                  </button>
                 </div>
               </div>
             </div>
 
           </div>
         </div>
-        <button class="cert-carousel-btn next" id="certNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+        <button class="cert-carousel-btn next" id="certNext" aria-label="Next"><i
+            class="fa-solid fa-chevron-right"></i></button>
       </div>
 
     </div>
   </section>
+
+  <!-- ===== PROJECT DETAILS MODAL ===== -->
+  <div class="project-modal-overlay" id="projectModalOverlay">
+    <div class="project-modal">
+      <button class="project-modal-close" id="projectModalClose" aria-label="Close modal"><i
+          class="fa-solid fa-xmark"></i></button>
+      <div class="project-modal-img-wrap">
+        <img id="projectModalImg" class="project-modal-img" alt="Project Preview" />
+        <span id="projectModalBadge" class="portfolio-card-badge"></span>
+      </div>
+      <div class="project-modal-content">
+        <h3 class="project-modal-title" id="projectModalTitle"></h3>
+        <div class="project-modal-tech-pills mb-3" id="projectModalTech"></div>
+        <p class="project-modal-description mb-4" id="projectModalDesc"></p>
+        <div class="project-modal-actions">
+          <a href="#" id="projectModalLiveBtn" target="_blank" class="project-modal-btn project-modal-btn-primary">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project
+          </a>
+          <a href="#" id="projectModalGithubBtn" target="_blank" class="project-modal-btn project-modal-btn-secondary">
+            <i class="fa-brands fa-github"></i> Source Code
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ===== CERTIFICATE MODAL ===== -->
   <div class="cert-modal-overlay" id="certModalOverlay">
@@ -448,7 +712,6 @@
       <p class="cert-modal-body" id="certModalBody"></p>
     </div>
   </div>
-
   <!-- ===== CONTACT SECTION ===== -->
   <section id="contact" class="contact-section py-5" data-aos="fade-up" data-aos-duration="900">
     <div class="container">
@@ -525,157 +788,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    // ===== Theme Toggle =====
-    const themeToggle = document.getElementById('themeToggle');
-    const root = document.documentElement;
-
-    function applyTheme(theme) {
-      if (theme === 'light') root.setAttribute('data-theme', 'light');
-      else root.removeAttribute('data-theme');
-      themeToggle.setAttribute(
-        'aria-label',
-        theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'
-      );
-      try {
-        localStorage.setItem('theme', theme === 'light' ? 'light' : 'dark');
-      } catch (e) { /* ignore */ }
-    }
-
-    applyTheme(root.getAttribute('data-theme') === 'light' ? 'light' : 'dark');
-
-    themeToggle.addEventListener('click', () => {
-      const isLight = root.getAttribute('data-theme') === 'light';
-      applyTheme(isLight ? 'dark' : 'light');
-    });
-
-    // ===== AOS Init =====
-    AOS.init({
-      duration: 700,
-      easing: 'ease-out-cubic',
-      once: true,
-      offset: 80
-    });
-
-    // ===== Typing Animation =====
-    const roles = ['Software Engineer', 'Web Developer', 'Flutter Developer'];
-    let roleIndex = 0, charIndex = 0, isDeleting = false;
-    const typedEl = document.getElementById('typed-role');
-
-    function type() {
-      const current = roles[roleIndex];
-      typedEl.textContent = isDeleting
-        ? current.substring(0, charIndex--)
-        : current.substring(0, charIndex++);
-
-      let speed = isDeleting ? 55 : 95;
-      if (!isDeleting && charIndex === current.length + 1) {
-        speed = 2000; isDeleting = true;
-      } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        roleIndex = (roleIndex + 1) % roles.length;
-        speed = 500;
-      }
-      setTimeout(type, speed);
-    }
-    // يبدأ بعد ما الحروف تخلص
-    setTimeout(type, 1400);
-
-    // ===== Progress Bars: animate on scroll =====
-    const bars = document.querySelectorAll('.progress-bar-custom');
-    const barObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const target = entry.target;
-          const width = target.style.width;
-          target.style.width = '0';
-          // small trick: force reflow then set width
-          requestAnimationFrame(() => {
-            requestAnimationFrame(() => { target.style.width = width; });
-          });
-          barObserver.unobserve(target);
-        }
-      });
-    }, { threshold: 0.3 });
-    bars.forEach(b => barObserver.observe(b));
-
-    // ===== Active Nav Link on Scroll =====
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-links a');
-    window.addEventListener('scroll', () => {
-      let current = '';
-      sections.forEach(sec => {
-        if (window.scrollY >= sec.offsetTop - 120) current = sec.getAttribute('id');
-      });
-      navLinks.forEach(link => {
-        link.classList.remove('active-link');
-        if (link.getAttribute('href') === '#' + current) link.classList.add('active-link');
-      });
-    });
-
-    // ===== Certificates Carousel =====
-    const detailCards = document.querySelectorAll('.cert-detail-card');
-    let currentSlide = 0;
-    const track = document.getElementById('certTrack');
-    const prevBtn = document.getElementById('certPrev');
-    const nextBtn = document.getElementById('certNext');
-
-    function getVisibleCards() {
-      return [...detailCards].filter(c => c.style.display !== 'none');
-    }
-    function getCardsPerView() {
-      if (window.innerWidth < 576) return 1;
-      if (window.innerWidth < 992) return 2;
-      return 3;
-    }
-    function updateCarousel() {
-      const cards = getVisibleCards();
-      const perView = getCardsPerView();
-      const maxSlide = Math.max(0, cards.length - perView);
-      currentSlide = Math.min(currentSlide, maxSlide);
-      const cardWidth = track.parentElement.offsetWidth / perView;
-      track.style.transform = `translateX(-${currentSlide * cardWidth}px)`;
-      updateCarouselBtns();
-    }
-    function updateCarouselBtns() {
-      const cards = getVisibleCards();
-      const perView = getCardsPerView();
-      prevBtn.disabled = currentSlide === 0;
-      nextBtn.disabled = currentSlide >= cards.length - perView;
-    }
-    prevBtn.addEventListener('click', () => { currentSlide--; updateCarousel(); });
-    nextBtn.addEventListener('click', () => { currentSlide++; updateCarousel(); });
-    window.addEventListener('resize', () => { currentSlide = 0; updateCarousel(); });
-    updateCarouselBtns();
-
-    // ===== Certificates Modal =====
-    const overlay = document.getElementById('certModalOverlay');
-    const modalClose = document.getElementById('certModalClose');
-    const modalImg = document.getElementById('certModalImg');
-    const modalTitle = document.getElementById('certModalTitle');
-    const modalMeta = document.getElementById('certModalMeta');
-    const modalBody = document.getElementById('certModalBody');
-
-    document.querySelectorAll('.cert-view-btn').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const card = btn.closest('.cert-detail-card');
-        const img = card.querySelector('.cert-card-img');
-        if (img) modalImg.src = img.src;
-        modalTitle.textContent = card.dataset.title;
-        modalMeta.textContent = card.dataset.org + ' · ' + card.dataset.date;
-        modalBody.textContent = card.dataset.desc;
-        overlay.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      });
-    });
-    modalClose.addEventListener('click', closeModal);
-    overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
-    function closeModal() {
-      overlay.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-  </script>
+  <!-- ===== CUSTOM SCROLLBAR ===== -->
+  <div id="sb-track">
+    <div id="sb-thumb"></div>
+  </div>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
