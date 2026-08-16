@@ -439,3 +439,110 @@ function closeModal() {
     window.scrollBy({ top: e.deltaY });
   }, { passive: true });
 })();
+
+// ===== CONTACT SECTION INTERACTIVITY & TOAST =====
+(function () {
+  const contactForm = document.getElementById('contactForm');
+  const copyEmailBtn = document.getElementById('copyEmailBtn');
+  const toast = document.getElementById('contactToast');
+  const toastMessage = document.getElementById('toastMessage');
+  const toastIcon = document.getElementById('toastIcon');
+  let toastTimer = null;
+
+  function showToast(msg, isError = false) {
+    if (!toast || !toastMessage || !toastIcon) return;
+    toastMessage.textContent = msg;
+
+    if (isError) {
+      toast.classList.add('toast-error');
+      toastIcon.className = 'fa-solid fa-circle-xmark toast-icon text-danger';
+    } else {
+      toast.classList.remove('toast-error');
+      toastIcon.className = 'fa-solid fa-circle-check toast-icon text-success';
+    }
+
+    toast.classList.add('toast-show');
+
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      toast.classList.remove('toast-show');
+    }, 3500);
+  }
+
+  // --- Copy Email ---
+  if (copyEmailBtn) {
+    copyEmailBtn.addEventListener('click', function () {
+      const email = 'tareknabilhelmy1122@gmail.com';
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(() => {
+          showToast('Email address copied to clipboard! 📋');
+        }).catch(() => {
+          fallbackCopy(email);
+        });
+      } else {
+        fallbackCopy(email);
+      }
+    });
+  }
+
+  function fallbackCopy(text) {
+    const input = document.createElement('input');
+    input.value = text;
+    document.body.appendChild(input);
+    input.select();
+    try {
+      document.execCommand('copy');
+      showToast('Email address copied to clipboard! 📋');
+    } catch (err) {
+      showToast('Failed to copy email', true);
+    }
+    document.body.removeChild(input);
+  }
+
+  // --- Form Submit ---
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const messageInput = document.getElementById('message');
+      const submitBtn = document.getElementById('contactSubmitBtn');
+
+      const name = nameInput ? nameInput.value.trim() : '';
+      const email = emailInput ? emailInput.value.trim() : '';
+      const message = messageInput ? messageInput.value.trim() : '';
+
+      if (!name || !email || !message) {
+        showToast('Please fill out all fields before sending.', true);
+        return;
+      }
+
+      // Simple Email Regex Validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        showToast('Please enter a valid email address.', true);
+        return;
+      }
+
+      // Loading state
+      if (submitBtn) {
+        const btnText = submitBtn.querySelector('.btn-text');
+        const btnSpinner = submitBtn.querySelector('.btn-spinner');
+        if (btnText) btnText.classList.add('d-none');
+        if (btnSpinner) btnSpinner.classList.remove('d-none');
+        submitBtn.disabled = true;
+
+        setTimeout(() => {
+          if (btnText) btnText.classList.remove('d-none');
+          if (btnSpinner) btnSpinner.classList.add('d-none');
+          submitBtn.disabled = false;
+
+          showToast('Thank you, ' + name + '! Your message has been sent successfully. ✨');
+          contactForm.reset();
+        }, 1200);
+      }
+    });
+  }
+})();
+
