@@ -132,43 +132,174 @@
         Get to know more about my journey, passion, and the technologies I work with
       </p>
 
-      <div class="row align-items-center g-5">
-        <!-- Image -->
+      <div class="row align-items-start g-5">
+        <!-- Image & Stats Column -->
         <div class="col-12 col-md-4 text-center" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
-          <img src="images/profile.jpg" alt="Tarek Nabil" class="about-img-photo img-fluid" />
-        </div>
+          <div class="about-photo-wrap">
+            <img src="images/profile.jpg" alt="Tarek Nabil" class="about-img-photo img-fluid" />
+            <div class="about-photo-badge"><i class="fa-solid fa-code"></i></div>
+          </div>
 
-        <!-- Text -->
-        <div class="col-12 col-md-8" data-aos="fade-left" data-aos-delay="250" data-aos-duration="800">
-          <h3 id="se" class="about-sub-title mb-3">Passionate Software Engineer</h3>
-          <p class="about-para">
-            I'm a dedicated software engineer with a strong foundation in web development and a passion for creating
-            innovative digital solutions.
-            My journey in programming started with curiosity and has evolved into a career focused on building
-            efficient, scalable, and user-friendly applications.
-          </p>
-          <p class="about-para">
-            With expertise in modern web technologies like React, C#, and JavaScript, I enjoy tackling complex problems
-            and turning ideas into reality.
-            I believe in writing clean, maintainable code and staying up-to-date with the latest industry trends and
-            best practices.
-          </p>
-          <p class="about-para">
-            When I'm not coding, I love exploring new technologies, contributing to open-source projects, and sharing
-            knowledge with the developer community.
-            My goal is to create meaningful software that makes a positive impact on users' lives.
-          </p>
-
-          <div class="about-stats d-flex gap-4 mt-4 flex-wrap" data-aos="fade-up" data-aos-delay="350">
-            <div class="text-center">
-              <h4 class="stat-number">2+</h4>
+          <!-- Stats Cards -->
+          <div class="about-stats-grid mt-4">
+            <div class="about-stat-card" data-aos="zoom-in" data-aos-delay="400">
+              <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
               <span class="stat-label">Years Experience</span>
             </div>
-            <div class="text-center">
-              <h4 class="stat-number">15+</h4>
-              <span class="stat-label">Projects Completed</span>
+            <div class="about-stat-card" data-aos="zoom-in" data-aos-delay="500">
+              <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Projects Done</span>
+            </div>
+            <div class="about-stat-card" data-aos="zoom-in" data-aos-delay="600">
+              <span class="stat-number" data-target="7">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Certificates</span>
+            </div>
+            <div class="about-stat-card" data-aos="zoom-in" data-aos-delay="700">
+              <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Technologies</span>
             </div>
           </div>
+        </div>
+
+        <!-- Tabs Column -->
+        <div class="col-12 col-md-8" data-aos="fade-left" data-aos-delay="250" data-aos-duration="800">
+
+          <!-- Tab Buttons -->
+          <div class="about-tabs-nav mb-4" role="tablist">
+            <button class="about-tab-btn active" id="tab-about" role="tab" aria-selected="true"
+              aria-controls="panel-about" data-tab="about">
+              <i class="fa-solid fa-user me-2"></i>About
+            </button>
+            <button class="about-tab-btn" id="tab-education" role="tab" aria-selected="false"
+              aria-controls="panel-education" data-tab="education">
+              <i class="fa-solid fa-graduation-cap me-2"></i>Education
+            </button>
+            <button class="about-tab-btn" id="tab-experience" role="tab" aria-selected="false"
+              aria-controls="panel-experience" data-tab="experience">
+              <i class="fa-solid fa-briefcase me-2"></i>Experience
+            </button>
+          </div>
+
+          <!-- Tab Panels -->
+          <div class="about-tabs-content">
+
+            <!-- About Panel -->
+            <div class="about-tab-panel active" id="panel-about" role="tabpanel" aria-labelledby="tab-about">
+              <h3 class="about-sub-title mb-3">Passionate Software Engineer</h3>
+              <p class="about-para">
+                I'm a dedicated software engineer with a strong foundation in web development and a passion for
+                creating innovative digital solutions. My journey in programming started with curiosity and has
+                evolved into a career focused on building efficient, scalable, and user-friendly applications.
+              </p>
+              <p class="about-para">
+                With expertise in modern web technologies like HTML, CSS, JavaScript, C#, and Flutter, I enjoy
+                tackling complex problems and turning ideas into reality. I believe in writing clean, maintainable
+                code and staying up-to-date with the latest industry trends and best practices.
+              </p>
+              <p class="about-para">
+                When I'm not coding, I love exploring new technologies, contributing to open-source projects,
+                and sharing knowledge with the developer community. My goal is to create meaningful software
+                that makes a positive impact on users' lives.
+              </p>
+
+              <!-- Interests -->
+              <div class="about-interests mt-4">
+                <h5 class="about-interests-title mb-3"><i class="fa-solid fa-heart me-2"
+                    style="color:#ec4899"></i>Interests</h5>
+                <div class="about-interests-list">
+                  <span class="interest-chip"><i class="fa-solid fa-globe me-1"></i>Web Dev</span>
+                  <span class="interest-chip"><i class="fa-solid fa-mobile-screen me-1"></i>Mobile Apps</span>
+                  <span class="interest-chip"><i class="fa-brands fa-github me-1"></i>Open Source</span>
+                  <span class="interest-chip"><i class="fa-solid fa-robot me-1"></i>AI & ML</span>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Education Panel -->
+            <div class="about-tab-panel" id="panel-education" role="tabpanel" aria-labelledby="tab-education">
+              <div class="edu-card">
+                <div class="edu-card-header">
+                  <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                  <div>
+                    <span class="edu-degree">B.Sc. Computer Science & Information Systems</span>
+                    <span class="edu-period">2022 – Present</span>
+                  </div>
+                </div>
+                <p class="edu-university"><i class="fa-solid fa-building-columns me-2"></i>Higher Technological
+                  Institute, Beni Suef</p>
+                <p class="edu-desc">
+                  Studying core computer science fundamentals including algorithms, data structures,
+                  databases, software engineering, and modern programming paradigms. The program
+                  covers both theoretical foundations and practical applications in software development,
+                  preparing graduates for real-world engineering challenges.
+                </p>
+                <div class="edu-tags">
+                  <span>Algorithms</span>
+
+                  <span>Databases</span>
+                  <span>Software Engineering</span>
+                  <span>OOP</span>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Experience Panel -->
+            <div class="about-tab-panel" id="panel-experience" role="tabpanel" aria-labelledby="tab-experience">
+              <div class="about-timeline">
+
+                <div class="about-timeline-item">
+                  <div class="about-timeline-dot" style="--dot-color:#3b82f6"></div>
+                  <div class="about-timeline-content">
+                    <span class="about-timeline-date"><i class="fa-regular fa-calendar me-1"></i>2023 – Present</span>
+                    <h4 class="about-timeline-title">Web & Mobile Development</h4>
+                    <p class="about-timeline-place"><i class="fa-solid fa-laptop-code me-1"></i>Self-Learning & Practice
+                    </p>
+                    <p class="about-timeline-desc">Continuously learning and building web applications using HTML, CSS,
+                      JavaScript, and Bootstrap, alongside cross-platform mobile apps with Flutter & Dart. Applying
+                      skills through hands-on personal projects.</p>
+                    <div class="about-exp-tags">
+                      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Flutter</span><span>Dart</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="about-timeline-item">
+                  <div class="about-timeline-dot" style="--dot-color:#8b5cf6"></div>
+                  <div class="about-timeline-content">
+                    <span class="about-timeline-date"><i class="fa-regular fa-calendar me-1"></i>May 2026</span>
+                    <h4 class="about-timeline-title">Intelaq 4 Innovation Competition Participant</h4>
+                    <p class="about-timeline-place"><i class="fa-solid fa-trophy me-1"></i>Higher Technological
+                      Institute & NTI</p>
+                    <p class="about-timeline-desc">Presented <strong>Curevia</strong> – an Intelligent Hospital
+                      Management & Smart Health Tracking System – at the 4th Intelaq Scientific Research and Innovation
+                      Forum.</p>
+                    <div class="about-exp-tags">
+                      <span>Flutter</span><span>Firebase</span><span>Healthcare</span><span>IoT</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="about-timeline-item">
+                  <div class="about-timeline-dot" style="--dot-color:#ec4899"></div>
+                  <div class="about-timeline-content">
+                    <span class="about-timeline-date"><i class="fa-regular fa-calendar me-1"></i>2023 – 2024</span>
+                    <h4 class="about-timeline-title">Personal Projects & Open Source Contributions</h4>
+                    <p class="about-timeline-place"><i class="fa-brands fa-github me-1"></i>GitHub</p>
+                    <p class="about-timeline-desc">Developed multiple web and mobile projects including e-commerce
+                      platforms, smart home apps, and pet management systems. Focused on clean code and modern UI/UX.
+                    </p>
+                    <div class="about-exp-tags">
+                      <span>C#</span><span>Dart</span><span>MySQL</span><span>Firebase</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div><!-- end tabs content -->
         </div>
       </div>
     </div>
@@ -185,39 +316,63 @@
       </p>
 
       <div class="d-flex flex-wrap justify-content-center gap-3">
+        <!-- Web Development -->
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="100">
+          <i class="fa-brands fa-html5" style="color:#e34f26;"></i><span>HTML5</span>
+        </div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="130">
+          <i class="fa-brands fa-css3-alt" style="color:#1572B6;"></i><span>CSS3</span>
+        </div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="160">
+          <i class="fa-brands fa-js" style="color:#f7df1e;"></i><span>JavaScript</span>
+        </div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="190">
+          <i class="fa-brands fa-bootstrap" style="color:#7952b3;"></i><span>Bootstrap</span>
+        </div>
+
+        <!-- Mobile Development -->
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="220">
+          <i class="fa-solid fa-mobile-screen-button" style="color:#54C5F8;"></i><span>Flutter</span>
+        </div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="250">
+          <i class="fa-solid fa-d" style="color:#00B4AB;"></i><span>Dart</span>
+        </div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="280">
+          <i class="fa-brands fa-android" style="color:#3DDC84;"></i><span>Android</span>
+        </div>
+
         <!-- Languages -->
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="100"><i class="devicon-cplusplus-plain"
-            style="color:#00599C;"></i><span>C++</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="150"><i class="fa-solid fa-layer-group"
-            style="color:#68217a;"></i><span>C#</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="200"><i class="fa-brands fa-js"
-            style="color:#f7df1e;"></i><span>JavaScript</span></div>
-        <!-- Web -->
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="250"><i class="fa-solid fa-code"
-            style="color:#e34f26;"></i><span>HTML / CSS</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="300"><i class="fa-brands fa-bootstrap"
-            style="color:#7952b3;"></i><span>Bootstrap</span></div>
-        <!-- Mobile -->
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="350"><i class="fa-solid fa-mobile-screen-button"
-            style="color:#54C5F8;"></i><span>Flutter</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="400"><i class="fa-solid fa-d"
-            style="color:#00B4AB;"></i><span>Dart</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="450"><i class="fa-brands fa-android"
-            style="color:#3DDC84;"></i><span>Android</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="310">
+          <i class="devicon-cplusplus-plain" style="color:#00599C;"></i><span>C++</span>
+        </div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="340">
+          <i class="fa-solid fa-layer-group" style="color:#68217a;"></i><span>C#</span>
+        </div>
+
         <!-- Databases -->
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="500"><i class="fa-solid fa-database"
-            style="color:#00758f;"></i><span>MySQL</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="530"><i class="fa-solid fa-server"
-            style="color:#cc292b;"></i><span>SQL Server</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="560"><i class="fa-solid fa-fire"
-            style="color:#FFCA28;"></i><span>Firebase</span></div>
-        <!-- Tools & Design -->
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="590"><i class="fa-brands fa-git-alt"
-            style="color:#f05032;"></i><span>Git / GitHub</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="620"><i class="fa-solid fa-laptop-code"
-            style="color:#007acc;"></i><span>VS Code</span></div>
-        <div class="tech-card" data-aos="flip-left" data-aos-delay="650"><i class="devicon-figma-plain"
-            style="color:#F24E1E;"></i><span>Figma</span></div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="370">
+          <i class="fa-solid fa-database" style="color:#00758f;"></i><span>MySQL</span>
+        </div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="400">
+          <i class="fa-solid fa-server" style="color:#cc292b;"></i><span>SQL Server</span>
+        </div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="430">
+          <i class="fa-solid fa-fire" style="color:#FFCA28;"></i><span>Firebase</span>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="460">
+          <i class="fa-brands fa-git-alt" style="color:#f05032;"></i><span>Git</span>
+        </div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="490">
+          <i class="fa-brands fa-github" style="color:#8b5cf6;"></i><span>GitHub</span>
+        </div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="520">
+          <i class="fa-solid fa-laptop-code" style="color:#007acc;"></i><span>VS Code</span>
+        </div>
+        <div class="tech-card" data-aos="flip-left" data-aos-delay="550">
+          <i class="devicon-figma-plain" style="color:#F24E1E;"></i><span>Figma</span>
+        </div>
       </div>
     </div>
   </section>
@@ -277,7 +432,7 @@
                     <button class="portfolio-details-btn">
                       <i class="fa-solid fa-circle-info"></i> Details
                     </button>
-                    <a href="e:\Muffia_store\Home.html" target="_blank" class="portfolio-view-btn">
+                    <a href="https://muffia-store.vercel.app/" target="_blank" class="portfolio-view-btn">
                       Visit <i class="fa-solid fa-arrow-right"></i>
                     </a>
                   </div>
@@ -312,6 +467,57 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="portfolio-slider-card" data-title="Curevia - Smart Hospital Management System"
+              data-badge="Healthcare" data-badge-class="web-badge"
+              data-tech="HTML5, CSS3, Bootstrap 5, JavaScript, php, sql,  AI, Real-Time Monitoring"
+              data-desc="Curevia is a smart hospital management system designed to improve healthcare operations through digital patient management, appointments, medical records, laboratory and radiology services, pharmacy management, emergency care, real-time health monitoring, smart alerts, and AI-powered patient deterioration prediction."
+              data-img="images/curevia.png" data-link="#" data-github="https://github.com/Tarek-Nabil">
+
+              <div class="portfolio-card-inner">
+
+                <div class="portfolio-card-img-wrap">
+                  <img src="images/curevia.png" alt="Curevia Smart Hospital" class="portfolio-card-img"
+                    onerror="this.src='https://placehold.co/400x250/141622/3b82f6?text=Curevia'" />
+
+                  <span class="portfolio-card-badge web-badge">
+                    Healthcare
+                  </span>
+                </div>
+
+                <div class="portfolio-card-body">
+
+                  <h4>Curevia</h4>
+
+                  <p class="portfolio-card-tech">
+                    <i class="fa-solid fa-code"></i>
+                    HTML5 · CSS3 · Bootstrap · JavaScript . php . sql
+                  </p>
+
+                  <p class="portfolio-card-excerpt">
+                    A smart hospital management system featuring patient management,
+                    appointments, medical records, real-time health monitoring,
+                    dashboards, and AI-powered healthcare insights.
+                  </p>
+
+                  <div class="d-flex align-items-center justify-content-between gap-2 mt-auto pt-2">
+
+                    <button class="portfolio-details-btn">
+                      <i class="fa-solid fa-circle-info"></i>
+                      Details
+                    </button>
+
+                    <a href="https://curevia-project.netlify.app/" target="_blank" class="portfolio-view-btn">
+                      Visit
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
             </div>
 
 
