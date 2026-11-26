@@ -536,42 +536,33 @@ function closeModal() {
       }
 
       try {
-        const response = await fetch('https://formsubmit.co/ajax/tareknabilhelmy1122@gmail.com', {
+        const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
           },
           body: JSON.stringify({
+            access_key: '666b001d-436e-4ae8-9027-ecb71e543c1f',
             name: name,
             email: email,
             message: message,
-            _subject: 'New Portfolio Message from ' + name,
-            _template: 'table',
-            _captcha: 'false'
+            subject: 'New Message from Portfolio: ' + name,
+            from_name: name
           })
         });
 
         const data = await response.json();
 
-        if (response.ok && (data.success === 'true' || data.success === true)) {
+        if (response.ok && data.success) {
           showToast('Thank you, ' + name + '! Your message has been sent successfully. ✨');
           contactForm.reset();
         } else {
-          // If server returned a specific message (e.g. activation required)
-          const errorMsg = data.message || 'Failed to send message. Please check if activation is needed.';
+          const errorMsg = data.message || 'Failed to send message. Please try again.';
           showToast(errorMsg, true);
         }
       } catch (error) {
         console.error('Contact Form Error:', error);
-        // If fetch fails (e.g. opened from local file:///), fallback to standard form submit
-        if (window.location.protocol === 'file:') {
-          showToast('Notice: file:/// protocol blocks direct AJAX. Submitting form...', false);
-          contactForm.action = 'https://formsubmit.co/tareknabilhelmy1122@gmail.com';
-          contactForm.method = 'POST';
-          contactForm.submit();
-          return;
-        }
         showToast('Connection error. Please check your internet or try again.', true);
       } finally {
         if (submitBtn) {
