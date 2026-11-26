@@ -501,7 +501,7 @@ function closeModal() {
 
   // --- Form Submit ---
   if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
+    contactForm.addEventListener('submit', async function (e) {
       e.preventDefault();
 
       const nameInput = document.getElementById('name');
@@ -526,21 +526,59 @@ function closeModal() {
       }
 
       // Loading state
+      const btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
+      const btnSpinner = submitBtn ? submitBtn.querySelector('.btn-spinner') : null;
+
       if (submitBtn) {
-        const btnText = submitBtn.querySelector('.btn-text');
-        const btnSpinner = submitBtn.querySelector('.btn-spinner');
         if (btnText) btnText.classList.add('d-none');
         if (btnSpinner) btnSpinner.classList.remove('d-none');
         submitBtn.disabled = true;
+      }
 
-        setTimeout(() => {
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/tareknabilhelmy1122@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            message: message,
+            _subject: 'New Portfolio Message from ' + name,
+            _template: 'table',
+            _captcha: 'false'
+          })
+        });
+
+        const data = await response.json();
+
+        if (response.ok && (data.success === 'true' || data.success === true)) {
+          showToast('Thank you, ' + name + '! Your message has been sent successfully. ✨');
+          contactForm.reset();
+        } else {
+          // If server returned a specific message (e.g. activation required)
+          const errorMsg = data.message || 'Failed to send message. Please check if activation is needed.';
+          showToast(errorMsg, true);
+        }
+      } catch (error) {
+        console.error('Contact Form Error:', error);
+        // If fetch fails (e.g. opened from local file:///), fallback to standard form submit
+        if (window.location.protocol === 'file:') {
+          showToast('Notice: file:/// protocol blocks direct AJAX. Submitting form...', false);
+          contactForm.action = 'https://formsubmit.co/tareknabilhelmy1122@gmail.com';
+          contactForm.method = 'POST';
+          contactForm.submit();
+          return;
+        }
+        showToast('Connection error. Please check your internet or try again.', true);
+      } finally {
+        if (submitBtn) {
           if (btnText) btnText.classList.remove('d-none');
           if (btnSpinner) btnSpinner.classList.add('d-none');
           submitBtn.disabled = false;
-
-          showToast('Thank you, ' + name + '! Your message has been sent successfully. ✨');
-          contactForm.reset();
-        }, 1200);
+        }
       }
     });
   }
